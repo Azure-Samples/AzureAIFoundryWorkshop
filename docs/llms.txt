@@ -1,0 +1,89 @@
+# Azure AI Foundry Workshop Context
+
+## Core SDKs
+- azure-ai-projects: Project and agent management
+  - Connection string format: "{region}.api.azureml.ms;{subscription_id};{resource_group};{workspace}"
+  - Used for creating and managing AI projects and agents
+  - Handles model deployment and monitoring
+  - Supports agent tool configuration and coordination
+
+- azure-ai-inference: Chat completions and inference
+  - Supports streaming responses and async operations
+  - Handles token management and rate limiting
+  - Integrates with OpenTelemetry for monitoring
+  - Provides content safety filters and validation
+
+- azure-ai-evaluation: Performance evaluation
+  - Groundedness assessment for response validation
+  - Relevance metrics for response quality
+  - Response validation against source context
+  - Integration with Azure Monitor
+
+## Agent Tools
+- File Search: Vector search using Azure AI Search
+  - Document retrieval and ranking
+  - Semantic search capabilities
+  - Context-aware responses
+  - Multi-format support
+
+- Code Interpreter: Python code execution
+  - Secure sandboxed environment
+  - Data analysis and visualization
+  - Package management
+  - Result interpretation
+
+- Bing Grounding: Real-time web data
+  - Current information verification
+  - Source credibility checking
+  - Multi-source validation
+  - Safe search integration
+
+## Implementation Patterns
+- RAG with Azure AI Search
+  - Vector storage and retrieval
+  - Semantic ranking
+  - Context augmentation
+  - Response generation
+
+- Multi-tool Agent Coordination
+  - Tool selection and routing
+  - Context sharing
+  - Error handling
+  - State management
+
+- Event-driven Processing
+  - Real-time event handling
+  - Asynchronous operations
+  - Message queuing
+  - State persistence
+
+- Real-time Monitoring
+  - OpenTelemetry integration
+  - Performance metrics
+  - Error tracking
+  - Resource utilization
+
+## E2E Sample Architecture
+- FastAPI Backend
+  - Azure SDK integration
+  - Authentication handling
+  - API versioning
+  - Request validation
+
+- React Frontend
+  - Real-time updates
+  - Streaming responses
+  - Error handling
+  - Progress indicators
+
+- Event-driven Architecture
+  - Message queuing
+  - State management
+  - Error recovery
+  - Scale handling
+
+- Observability
+  - Distributed tracing
+  - Metric collection
+  - Log aggregation
+  - Performance monitoring
