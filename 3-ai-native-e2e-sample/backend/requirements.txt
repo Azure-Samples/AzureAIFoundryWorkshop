@@ -1,0 +1,41 @@
+# Azure AI Services and Authentication
+azure-ai-projects
+azure-ai-inference[opentelemetry]
+azure-ai-evaluation
+azure-search-documents
+azure-identity
+azure-eventhub
+
+# Web Framework and Server
+fastapi
+uvicorn
+python-dotenv
+
+# Observability and Telemetry
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
+opentelemetry-instrumentation
+azure-core-tracing-opentelemetry
+opentelemetry-exporter-otlp
+opentelemetry-semantic-conventions
+
+# Data Models and Validation
+pydantic
+
+# Data Processing and Analysis
+pandas
+numpy
+
+# Testing and Development
+pytest
+pytest-mock
+pytest-asyncio
+httpx
+
+# Security and Authentication
+python-jose[cryptography]  # JWT handling
+requests
+
+# File Handling
+python-multipart
